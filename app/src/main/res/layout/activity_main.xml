@@ -6,13 +6,150 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Iniciando bomba"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:id="@+id/lblInicioBomba">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Num bomba"
+            android:id="@+id/txtNumBomba"
+            android:layout_marginTop="30dp"
+            ></EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Regular"
+                android:id="@+id/rbRegular"/>
+
+            <RadioButton
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Extra"
+                android:id="@+id/rbExtra"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Precio"
+            android:id="@+id/txtPrecio"
+            ></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="Capacidad bomba"
+            android:id="@+id/txtCapacidad"
+            ></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="Contador litros"
+            android:id="@+id/txtContador"
+            ></EditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar bomba"
+            android:id="@+id/btnIniciarBomba"
+
+            >
+        </Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Ventas"
+            android:textSize="30dp"
+            android:textAlignment="center">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Cantidad"
+            android:inputType="number"
+            android:id="@+id/txtCantidad"
+            ></EditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hacer venta"
+            android:id="@+id/btnRealizarVenta">
+
+        </Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cantidad   Precio  Total a Pagar"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:id="@+id/lblCanPreTo"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cantidad   Precio  Total a Pagar"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:id="@+id/lblResultado"
+            ></TextView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Realizar la venta"
+            android:id="@+id/btnRealizarVenta2"
+            ></Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultar registro de ventas"
+            android:id="@+id/btnConsultar"
+            ></Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="Limpiar"
+                android:layout_marginRight="150dp"
+                android:id="@+id/btnLimpiar"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="Salir"
+                android:id="@+id/btnSalir"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
